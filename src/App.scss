@@ -1,12 +1,13 @@
 @use "./styles/reset"; // Retire tout style par défaut des navigateurs
 @use "./styles/base"; // Ajuste le style général
+@use "./styles/anneau"; // Création de l'anneau
 
 body {
   background-color: #292100;
   color: #292100;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   font-family: "Outfit", sans-serif;
@@ -16,7 +17,21 @@ body {
   -webkit-text-stroke: 1px #f0f5f8;
 }
 .zonePrincipal {
-    margin-top: 2rem;
+  margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .titrePrincipal {
+  font-size: 2.4rem;
+}
+
+.basPage {
+  width: 100vw;
+  border-top: #f0f5f8 solid 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__partie {
+    border-bottom: #f0f5f8 solid 0.1rem;
+  }
 }
