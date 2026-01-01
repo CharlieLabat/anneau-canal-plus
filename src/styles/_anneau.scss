@@ -1,6 +1,17 @@
-.anneau{
-    background-color: conic-gradient(#FACA40,#F02A47);
-    &__texte{
-        font-size: 8rem;
-    }
+.anneau {
+  display: flex;
+  background: conic-gradient(#faca40, #f02a47);
+  align-self: center;
+  justify-self: center;
+  min-height: 50vh;
+  min-width: 50vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60% 60%;
+  &__texte {
+    background-color: black;
+    font-size: 8rem;
+    padding: 2rem;
+    border-radius: 60% 60%;
+  }
 }
