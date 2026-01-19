@@ -1,17 +1,47 @@
 .anneau {
   display: flex;
-  background: conic-gradient(#faca40, #f02a47);
+ // background: conic-gradient(#faca40, #f02a47);
   align-self: center;
   justify-self: center;
   min-height: 50vh;
   min-width: 50vw;
   align-items: center;
   justify-content: center;
-  border-radius: 60% 60%;
+  border-radius: 60% 40%;
+  margin-bottom: 2rem;
+  animation-duration: 3000ms;
+  animation-name: anneauturn;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
   &__texte {
-    background-color: black;
+    background-color: #292100;
     font-size: 8rem;
-    padding: 2rem;
-    border-radius: 60% 60%;
+    padding: 0.5rem;
+    border-radius: 60% 40%;
+    background-position: left 10%;
+  }
+}
+
+@keyframes anneauturn {
+  0% {
+  background: conic-gradient(#faca40, #f02a47,#30F056,  #3050F0 ,#A948F0,#FA8E2C);
+  }
+  22%{
+      background: conic-gradient(#FA8E2C,#faca40, #f02a47,#30F056,  #3050F0 ,#A948F0);
+  }
+    44%{
+      background: conic-gradient(#A948F0,#FA8E2C,#faca40, #f02a47,#30F056,  #3050F0 );
+  }
+      66%{
+      background: conic-gradient(#3050F0,#A948F0,#FA8E2C,#faca40, #f02a47,#30F056  );
+
+  }
+      88%{
+      background: conic-gradient(#30F056 ,#3050F0,#A948F0,#FA8E2C,#faca40, #f02a47 );
+
+  }
+    100% {
+      background: conic-gradient( #FA8E2C,#A948F0,#3050F0,#30F056, #f02a47,#faca40);
   }
 }
