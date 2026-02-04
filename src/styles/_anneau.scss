@@ -1,6 +1,6 @@
 .anneau {
   display: flex;
- // background: conic-gradient(#faca40, #f02a47);
+  // background: conic-gradient(#faca40, #f02a47);
   align-self: center;
   justify-self: center;
   min-height: 50vh;
@@ -12,8 +12,7 @@
   animation-duration: 3000ms;
   animation-name: anneauturn;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
+
   &__texte {
     background-color: #292100;
     font-size: 8rem;
@@ -25,23 +24,69 @@
 
 @keyframes anneauturn {
   0% {
-  background: conic-gradient(#faca40, #f02a47,#30F056,  #3050F0 ,#A948F0,#FA8E2C);
+    background: conic-gradient(
+      from 10deg,
+      #faca40,
+      #f02a47,
+      #30f056,
+      #3050f0,
+      #a948f0,
+      #fa8e2c
+    );
   }
-  22%{
-      background: conic-gradient(#FA8E2C,#faca40, #f02a47,#30F056,  #3050F0 ,#A948F0);
+  22% {
+    background: conic-gradient(
+      from 70deg,
+      #faca40,
+      #f02a47,
+      #30f056,
+      #3050f0,
+      #a948f0,
+      #fa8e2c
+    );
   }
-    44%{
-      background: conic-gradient(#A948F0,#FA8E2C,#faca40, #f02a47,#30F056,  #3050F0 );
+  44% {
+    background: conic-gradient(
+      from 130deg,
+      #faca40,
+      #f02a47,
+      #30f056,
+      #3050f0,
+      #a948f0,
+      #fa8e2c
+    );
   }
-      66%{
-      background: conic-gradient(#3050F0,#A948F0,#FA8E2C,#faca40, #f02a47,#30F056  );
-
+  66% {
+    background: conic-gradient(
+      from 210deg,
+      #faca40,
+      #f02a47,
+      #30f056,
+      #3050f0,
+      #a948f0,
+      #fa8e2c
+    );
   }
-      88%{
-      background: conic-gradient(#30F056 ,#3050F0,#A948F0,#FA8E2C,#faca40, #f02a47 );
-
+  88% {
+    background: conic-gradient(
+      from 270deg,
+      #faca40,
+      #f02a47,
+      #30f056,
+      #3050f0,
+      #a948f0,
+      #fa8e2c
+    );
   }
-    100% {
-      background: conic-gradient( #FA8E2C,#A948F0,#3050F0,#30F056, #f02a47,#faca40);
+  100% {
+    background: conic-gradient(
+      from 360deg,
+      #faca40,
+      #f02a47,
+      #30f056,
+      #3050f0,
+      #a948f0,
+      #fa8e2c
+    );
   }
 }

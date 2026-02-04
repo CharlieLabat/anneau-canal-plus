@@ -18,7 +18,7 @@ body {
 }
 .zonePrincipal {
   margin-top: 2rem;
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .titrePrincipal {
   font-size: 2.4rem;
@@ -29,9 +29,30 @@ body {
   border-top: #f0f5f8 solid 0.1rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 
+  font-size: 2.4rem;
   &__partie {
     border-bottom: #f0f5f8 solid 0.1rem;
+    margin-top: 2rem;
+    &--debut {
+      margin-top: 0;
+    }
+    &--fin {
+      margin-top: 0;
+
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
+}
+.texteAffiche {
+  background-color: #292100;
+  border: 0;
+  width: 80vw;
+  height: 3rem;
+    font-size: 2.4rem;
+}
+.texteLabel {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }

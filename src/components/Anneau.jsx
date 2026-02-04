@@ -1,7 +1,7 @@
 
-const Anneau = () => {
+const Anneau = (props) => {
  return <section className="anneau">
-    <h2 className="anneau__texte">COUCOU +</h2>
+    <h2 className="anneau__texte">{props.texte}</h2>
  </section>
 }
 export default Anneau
