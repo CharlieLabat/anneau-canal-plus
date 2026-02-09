@@ -9,7 +9,7 @@ function App() {
 const dateAdjBrut = new Date();
 const dateAdj = dateAdjBrut.getDate() + "/" + (dateAdjBrut.getMonth()+1) + "/"+ dateAdjBrut.getFullYear()
 
-const [texte, setTexte] = useState('')
+const [texte, setTexte] = useState('Hello +')
 
 
 
@@ -28,7 +28,7 @@ const [texte, setTexte] = useState('')
     <p className='basPage__partie'></p>
     <p className='basPage__partie'></p>
     <p className='basPage__partie'></p>
-    <p className='basPage__partie--fin'>{dateAdj}</p>
+    <p className='basPage__partie--fin'>Reproduction de l'anneau Canal + (1984 - 1995) - on est le   {dateAdj}</p>
   </footer>
   </> )
 }

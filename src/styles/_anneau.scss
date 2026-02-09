@@ -1,6 +1,18 @@
+@mixin colorAnneau($angle: 0deg) {
+  background: conic-gradient(
+    from $angle,
+    #faca40,
+    #f02a47,
+    #30f056,
+    #3050f0,
+    #a948f0,
+    #fa8e2c
+  );
+}
+
 .anneau {
   display: flex;
-  // background: conic-gradient(#faca40, #f02a47);
+
   align-self: center;
   justify-self: center;
   min-height: 50vh;
@@ -24,69 +36,18 @@
 
 @keyframes anneauturn {
   0% {
-    background: conic-gradient(
-      from 10deg,
-      #faca40,
-      #f02a47,
-      #30f056,
-      #3050f0,
-      #a948f0,
-      #fa8e2c
-    );
+    @include colorAnneau($angle: 18deg);
   }
-  22% {
-    background: conic-gradient(
-      from 70deg,
-      #faca40,
-      #f02a47,
-      #30f056,
-      #3050f0,
-      #a948f0,
-      #fa8e2c
-    );
+  5% {
+    @include colorAnneau($angle: 36deg);
   }
-  44% {
-    background: conic-gradient(
-      from 130deg,
-      #faca40,
-      #f02a47,
-      #30f056,
-      #3050f0,
-      #a948f0,
-      #fa8e2c
-    );
+  10% {
+    @include colorAnneau($angle: 54deg);
   }
-  66% {
-    background: conic-gradient(
-      from 210deg,
-      #faca40,
-      #f02a47,
-      #30f056,
-      #3050f0,
-      #a948f0,
-      #fa8e2c
-    );
-  }
-  88% {
-    background: conic-gradient(
-      from 270deg,
-      #faca40,
-      #f02a47,
-      #30f056,
-      #3050f0,
-      #a948f0,
-      #fa8e2c
-    );
+  15% {
+    @include colorAnneau($angle: 72deg);
   }
   100% {
-    background: conic-gradient(
-      from 360deg,
-      #faca40,
-      #f02a47,
-      #30f056,
-      #3050f0,
-      #a948f0,
-      #fa8e2c
-    );
+    @include colorAnneau($angle: 360deg);
   }
 }
