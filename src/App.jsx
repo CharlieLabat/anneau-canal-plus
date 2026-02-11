@@ -16,7 +16,7 @@ const [texte, setTexte] = useState('Hello +')
   return (
   <>
   <section className='zonePrincipal'>
-    <h1 className='titrePrincipal'>Le retour de l'anneau</h1>
+    <h1 className='titrePrincipal'>L'anneau</h1>
   </section>
   <Anneau texte={texte}></Anneau>
   <footer className='basPage'>

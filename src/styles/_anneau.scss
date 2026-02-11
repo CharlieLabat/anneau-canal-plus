@@ -1,12 +1,14 @@
 @mixin colorAnneau($angle: 0deg) {
   background: conic-gradient(
     from $angle,
+
     #faca40,
     #f02a47,
     #30f056,
     #3050f0,
     #a948f0,
-    #fa8e2c
+    #fa8e2c,
+    #faca40
   );
 }
 
@@ -21,7 +23,7 @@
   justify-content: center;
   border-radius: 60% 40%;
   margin-bottom: 2rem;
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
   animation-name: anneauturn;
   animation-iteration-count: infinite;
 
@@ -47,7 +49,56 @@
   15% {
     @include colorAnneau($angle: 72deg);
   }
-  100% {
+  20% {
+    @include colorAnneau($angle: 90deg);
+  }
+  25% {
+    @include colorAnneau($angle: 108deg);
+  }
+  30% {
+    @include colorAnneau($angle: 126deg);
+  }
+  35% {
+    @include colorAnneau($angle: 144deg);
+  }
+  40% {
+    @include colorAnneau($angle: 162deg);
+  }
+  45% {
+    @include colorAnneau($angle: 180deg);
+  }
+  50% {
+    @include colorAnneau($angle: 198deg);
+  }
+  55% {
+    @include colorAnneau($angle: 216deg);
+  }
+  60% {
+    @include colorAnneau($angle: 234deg);
+  }
+  65% {
+    @include colorAnneau($angle: 252deg);
+  }
+  70% {
+    @include colorAnneau($angle: 270deg);
+  }
+  75% {
+    @include colorAnneau($angle: 288deg);
+  }
+  80% {
+    @include colorAnneau($angle: 306deg);
+  }
+  85% {
+    @include colorAnneau($angle: 324deg);
+  }
+  90% {
+    @include colorAnneau($angle: 342deg);
+  }
+  95% {
     @include colorAnneau($angle: 360deg);
+  }
+
+  100% {
+    @include colorAnneau($angle: 18deg);
   }
 }
